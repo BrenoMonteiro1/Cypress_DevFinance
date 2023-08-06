@@ -6,11 +6,11 @@ describe('Transações', () => {
 
         cy.get('#description').type(descricao)
 
-        cy.get('#amount').type(valor) //Inserindo a data
+        cy.get('#amount').type(valor) 
         
-        cy.get('#date').type("2023-08-05") //Clique no botão "Salvar"
+        cy.get('#date').type("2023-08-05")  //Inserindo a data
         
-        cy.contains('button', 'Salvar').click()
+        cy.contains('button', 'Salvar').click() //Clique no botão "Salvar"
     }
 
     beforeEach(() => { //Hook
@@ -44,7 +44,7 @@ describe('Transações', () => {
 
             .parent() // tr
 
-            .find('img') //Elemento que a gente precisa
+            .find('img') // O Elemento que precisamos
 
             .click() //Clique
             
